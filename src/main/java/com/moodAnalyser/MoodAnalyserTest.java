@@ -10,7 +10,7 @@ class MoodAnalyserTest {
 		}
 		@Test
 		void givenMessage_whenAny_thenReturnSadMood() {
-			MoodAnalyser moodAnalyser = new MoodAnalyser("I am in happy mood");
+			MoodAnalyser moodAnalyser = new MoodAnalyser(null);
 			Assert.assertEquals("HAPPY", moodAnalyser.analyseMood());
 		}
 }
